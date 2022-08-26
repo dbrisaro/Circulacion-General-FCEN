@@ -1,7 +1,7 @@
 ## Repositorio de Circulación general
 
 -----
-#### FCEyN, UBA - Segundo cuatrimestre 2021
+#### FCEyN, UBA - Segundo cuatrimestre 2022
 
-Docentes: Daniela Risaro, Leandro Diaz, Fátima Denapole
+Docentes: Daniela Risaro, Leandro Diaz
 
