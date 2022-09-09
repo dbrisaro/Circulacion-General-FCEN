@@ -1,17 +1,11 @@
 """
 Función para levantar las salidas del modelo QG_barotrop.f
 Adaptada de Anthony Schrapffer
-Leandro Díaz
-2018
+Leandro Díaz, Daniela Risaro
+2022
 """
 
 """
-
-Para utilizarlo agregar en el script es necesario definir todos los inputs y correr las siguientes dos líneas
-
-from cargar_salida_QG import cargar
-psi_temp, vort_temp, psiF, vortF, QG_diag, QG_curlw, X, Y, dx, dy=cargar(dir_salida, Lx, Ly, nx, ny)
-
 Extraccion de los datos de salida del modelo
 
 INPUTS
@@ -71,8 +65,8 @@ def cargar(dir_salida,Lx,Ly,nx,ny):
             QG_curlw = np.loadtxt(dir_salida+name) #fromfile(name)
 
     # Recorte de los datos
-    a1 = 1; a2 = np.size(vort_temp,0)-1;
-    b1 = 1; b2 = np.size(vort_temp,1)-1;
+    a1 = 1; a2 = np.size(vort_temp,0)-1
+    b1 = 1; b2 = np.size(vort_temp,1)-1
 
     psi_temp = psi_temp[a1:a2,b1:b2,:]
     psiF = psi_temp[:,:,np.size(psi_temp,2)-1]
@@ -83,7 +77,7 @@ def cargar(dir_salida,Lx,Ly,nx,ny):
     X = np.linspace(0,Lx,num=nx)
     Y = np.linspace(0,Ly,num=ny)
 
-    dx = Lx/(nx-1);
-    dy = Ly/(ny-1);
+    dx = Lx/(nx-1)
+    dy = Ly/(ny-1)
 
     return psi_temp, vort_temp, psiF, vortF, QG_diag, QG_curlw, X, Y, dx, dy
