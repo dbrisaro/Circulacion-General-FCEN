@@ -7,16 +7,16 @@ c............................................................................
 
 im=202           % number of grid points in the zonal direction
 jm=102            % number of grid points in the meridional direction
-ds=0.05           % grid step
+ds=0.1           % grid step
 dt=0.05          % time step
 Ro=0.0           % Rossby number (measures non-linearity of the flow)
-eps=0.          % non-dimensional coefficient representing bottom friction
+eps=0.145          % non-dimensional coefficient representing bottom friction
 Ah=0.0           % non-dimensional coeff. of horizontal Laplacian mixing
 Bh=0.0           % non-dimensional coeff. of horizontal bi-harmonic mixing
 gamma=0.0        % coeff. of "intermediate slipping" used as boundary cond.
 nst=1            % start time step number
-nend=2000        % end time step number
-nlpt=100          % frequency (time steps) for saving output
+nend=10000        % end time step number
+nlpt=1000          % frequency (time steps) for saving output
 MCF=0            % matrix (0) or column (1) output
 ncrit=4000       % number of steps allowed to do the relaxation (sub. helm)
 pcrit=0.1        % criterium to stop the relaxation
