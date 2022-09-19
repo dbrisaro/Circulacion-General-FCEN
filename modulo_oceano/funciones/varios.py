@@ -31,14 +31,14 @@ vortdim = vortadim*U/L
 trans_mer = np.diff(psiadim, n=1, axis=1)*D
 
 # Terminos ecuacion de stommel
+ds = 0.1
 ter1 = np.diff(psiadim, n=1, axis=1)
-ter1_LatCent = np.squeeze(ter1[int(np.size(ter1,0)/2),:])*Lx/(nx-1)
+ter1_LatCent = np.squeeze(ter1[int(np.size(ter1,0)/2),:])/ds
 
 ter2 = -QG_curlw[int(np.size(ter1,0)/2),1:(nx+1)]
 ter3 = Ef*vortadim[int(np.size(ter1,0)/2),:]
 
 # Terminos ecuacion Munk
-ds = 0.1
 term1 = np.diff(psiadim,n=1,axis=1)[int(np.size(psiadim,0)/2),:]/ds
 term2 = -QG_curlw[int(np.size(QG_curlw,0)/2),1:-1]    
 term3 = -Ev1*Calc_del2(vortadim,ds)[int(np.size(vortadim,0)/2),:]  
