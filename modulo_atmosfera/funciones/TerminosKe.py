@@ -38,7 +38,7 @@ def TermEvolKe(Ke,EstBas_u,EstBas_v,Anomzon_u,Anomzon_v,etae,H):
     # Calculo Advección total de energía cinética de las perturbaciones 
     advKe=-(EstBas_u*Ke.differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180)) + EstBas_v*Ke.differentiate('lat')/dy + Anomzon_u*Ke.differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180)) + Anomzon_v*Ke.differentiate('lat')/dy)
     # Calculo Conversion barotropica
-    ConvBarot=-1*H*(np.power(Anomzon_u,2)*EstBas_u.differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180))+Anomzon_u*Anomzon_v*EstBas_u['lat'].differentiate('lat')/dy+Anomzon_u*Anomzon_v*EstBas_v.differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180))+np.power(Anomzon_v,2)*EstBas_v.differentiate('lat')/dy)
+    ConvBarot=-1*H*(np.power(Anomzon_u,2)*EstBas_u.differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180))+Anomzon_u*Anomzon_v*EstBas_u.differentiate('lat')/dy+Anomzon_u*Anomzon_v*EstBas_v.differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180))+np.power(Anomzon_v,2)*EstBas_v.differentiate('lat')/dy)
     # Calculo Dispersión energía cinética
     DispKe=-9.8*H*((etae*Anomzon_u).differentiate('lon')/(dx*np.cos(Ke['lat']*np.pi/180))+(etae*Anomzon_v).differentiate('lat')/dy)
     #  Calculo Conversión baroclínica
