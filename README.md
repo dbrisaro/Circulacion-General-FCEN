@@ -7,7 +7,7 @@ Docentes: Daniela Risaro, Leandro Diaz, Milagro Urricariet
 
 ### Recursos: 
 
-En esta (carpeta de Drive)[https://drive.google.com/drive/folders/1D3mA7wqNYJexRigxI-kl8Gd-yYO4QaRe?usp=sharing] se realiza la entrega de las discusiones. 
+En esta [carpeta de Drive](https://drive.google.com/drive/folders/1D3mA7wqNYJexRigxI-kl8Gd-yYO4QaRe?usp=sharing) se realiza la entrega de las discusiones. 
 
 ## TODO
 
