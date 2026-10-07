@@ -2,7 +2,7 @@
 
 -----
 
-Docentes: Daniela Belen Risaro, Leandro Diaz
+Docentes: Daniela Risaro, Leandro Diaz
 
 Bienvenidxs al repositorio del curso llamado Circulación General (para la Licenciatura en Oceanografía) y Procesos Dinámicos de Gran Escala en la Atmósfera (para la Licenciatura en Ciencias de la Atmósfera) de la Facultad de Ciencias Exactas y Naturales (FCEN - UBA). Acá pueden encontrar los materiales para diferentes años.
 
